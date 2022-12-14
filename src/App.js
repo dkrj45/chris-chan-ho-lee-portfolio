@@ -1,9 +1,20 @@
 import './App.scss';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/Header/Header'
+import HomePage from './pages/HomePage/HomePage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
     <div className="App">
-      hello
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Navigate to="/Home" />}></Route>
+          <Route path='/Home' element={<HomePage />}></Route>
+          <Route path='*' element={<NotFoundPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
