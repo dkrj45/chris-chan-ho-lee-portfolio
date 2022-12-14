@@ -3,9 +3,70 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials//colors" as *;
 
-.header {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+
+    &__logo {
+        font-weight: 400;
+        color: $title;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    &__options {
+        display: none;
+        padding: 0;
+        margin: 0;
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    &__option-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 1rem;
+
+        &:hover {
+            background-color: $container;
+        }
+    }
+
+    &__option {
+        color: $title;
+        font-size: 1rem;
+
+        &:hover {
+            color: $title-dark;
+        }
+    }
+
+    &__toggle {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__options--toggled {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        right: 1rem;
+        width: 20rem;
+        height: 5rem;
+        background-color: $container;
+        margin: 0;
+        padding: 0;
+        border-radius: 1rem;
+        border: solid 1px rgba(0,0,0,0.1);
+    }
 }

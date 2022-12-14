@@ -1,12 +1,15 @@
 import './HomePage.scss';
+import Hero from '../../components/Hero/Hero';
+import About from '../../components/About/About';
 
 function HomePage() {
 
     return (
         <div>
-            <h1>HomePage</h1>
+            <Hero />
+            <About />
         </div>
     );
   }
   
-  export default HomePage;
+export default HomePage;
