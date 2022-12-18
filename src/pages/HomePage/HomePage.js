@@ -1,6 +1,8 @@
 import './HomePage.scss';
 import Hero from '../../components/Hero/Hero';
 import About from '../../components/About/About';
+import Projects from '../../components/Projects/Projects';
+import Contact from '../../components/Contact/Contact';
 
 function HomePage() {
 
@@ -8,6 +10,8 @@ function HomePage() {
         <div>
             <Hero />
             <About />
+            <Projects />
+            <Contact />
         </div>
     );
   }
