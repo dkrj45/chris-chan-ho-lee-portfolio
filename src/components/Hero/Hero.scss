@@ -17,26 +17,143 @@
     }
 }
 
+@keyframes scroll {
+    100% {
+        transform: translateY(50%);
+    }
+}
+
 .hero {
-    margin: 1rem 0;
+    margin: 2rem 0 0;
+
+    @include tablet {
+        margin: 10rem 0 0;
+        height: 700px;
+    }
+
+    &__tablet-container {
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+    &__mobile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__socials {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
     }
 
     &__social {
         margin: 0.5rem;
 
         &--icon {
-            width: 24px;
-            height: 24px;
+            width: 2rem;
         }
     }
 
     &__chris {
+        min-width: 150px;
         max-width: 300px;
-        max-height: 300px;
         animation: border-animation 8s ease-in-out infinite 1s;
+
+        @include tablet {
+            display: none;
+        }
+
+        &--tablet {
+            display: none;
+
+            @include tablet {
+                display: block;
+                min-width: 300px;
+                max-width: 400px;
+                animation: border-animation 8s ease-in-out infinite 1s;
+            }
+        }
+    }
+
+    &__text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__introduction {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            margin: 0 2rem;
+            min-width: 320px;
+            display: block;
+        }
+    }
+
+    &__name {
+        margin: 0 0 0.5rem;
+        font-size: 3rem;
+        color: $title;
+        font-weight: 500;
+    }
+
+    &__title {
+        color: $title;
+        font-size: 1.5rem;
+        padding-left: 5rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 70px;
+            height: 1px;
+            position: absolute;
+            background-color: $text;
+            top: 1rem;
+            left: 0;
+        }
+    }
+
+    &__description {
+        color: $text;
+    }
+
+    &__extra {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+            position: relative;
+            bottom: 0;
+            top: 10rem;
+        }
+    }
+
+    &__hand-down {
+        margin-right: 1rem;
+        width: 2rem;
+        animation: scroll 1.5s linear infinite;
+    }
+
+    &__learn-more {
+        font-size: 1rem;
+        color: $text;
     }
 }
