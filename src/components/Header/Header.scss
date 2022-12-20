@@ -1,12 +1,14 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use "../../styles/partials/variables" as *;
-@use "../../styles//partials//colors" as *;
+@use "../../styles//partials/colors" as *;
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    padding: 0 2rem;
 
     &__logo {
         font-weight: 400;

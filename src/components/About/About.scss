@@ -2,3 +2,114 @@
 @use '../../styles/partials/mixins' as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials//colors" as *;
+
+.about {
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    @include tablet {
+        height: 700px;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        color: $title;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        color: $text;
+    }
+
+    &__tablet-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+    &__chris {
+        width: 300px;
+        border-radius: 2rem;
+        margin: 4rem 1rem 2rem;
+
+        @include tablet {
+            width: 400px;
+            margin: 1rem;
+        }
+    }
+
+    &__skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $container;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 300px;
+
+        @include tablet {
+            margin: 0 1rem;
+            width: 400px;
+        }
+    }
+
+    &__skills-title {
+        font-size: 2rem;
+        color: $title;
+    }
+
+    &__skills-list {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        li {
+            padding: 0.5rem;
+            background-color: $body;
+            border-radius: 1rem;
+        }
+    }
+
+    &__text {
+        max-width: 475px;
+        margin-bottom: 1rem;
+    }
+
+    &__resume-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    &__resume {
+        padding: 1rem;
+        background-color: orange;
+        text-decoration: none;
+        color: $body;
+        border-radius: 2rem;
+
+        &:hover {
+            background-color: $title;
+        }
+    }
+}

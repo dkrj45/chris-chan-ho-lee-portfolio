@@ -2,3 +2,20 @@
 @use '../../styles/partials/mixins' as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials//colors" as *;
+
+.contact {
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    @include tablet {
+        height: 700px;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        color: $title;
+    }
+}
