@@ -18,7 +18,16 @@
     &__title {
         font-size: 2.5rem;
         color: $title;
-        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        color: $text;
+
+        @include tablet {
+            margin-bottom: 5rem;
+        }
+        
     }
 
     &__tablet-aligner {
@@ -38,10 +47,18 @@
         align-items: center;
         background-color: $container;
         width: 300px;
+        height: 700px;
         border-radius: 2rem;
+        margin:  2rem auto;
 
         @include tablet {
             width: 400px;
+            height: 750px;
+            margin:  0 auto 3rem;
+        }
+
+        @include desktop {
+            width: 500px;
         }
 
         &-top {
