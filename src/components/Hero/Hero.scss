@@ -26,9 +26,11 @@
 .hero {
     margin: 2rem 0 0;
     padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
 
     @include tablet {
-        margin: 10rem 0 0;
+        margin: 10rem auto 0;
         height: 700px;
     }
 
@@ -117,6 +119,7 @@
     &__title {
         color: $title;
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
         padding-left: 5rem;
         position: relative;
 

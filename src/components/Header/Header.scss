@@ -3,12 +3,16 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials/colors" as *;
 
+.header{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     padding: 0 2rem;
+    margin: 0 auto 2rem;
+    max-width: 1280px;
 
     &__logo {
         font-weight: 400;

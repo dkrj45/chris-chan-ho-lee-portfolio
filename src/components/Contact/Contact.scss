@@ -4,7 +4,8 @@
 @use "../../styles//partials//colors" as *;
 
 .contact {
-    margin: 3rem 1rem;
+    margin: 3rem auto;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,5 +18,15 @@
     &__title {
         font-size: 2.5rem;
         color: $title;
+    }
+
+    &__tablet-aligner {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 70%;
+        }
     }
 }
