@@ -1,0 +1,83 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles//partials//colors" as *;
+
+.footer {
+    width: 100%;
+    padding: 2rem;
+    background-color: $container;
+    height: 15rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 250px;
+        height: 100%;
+
+        @include tablet {
+            width: 350px;
+        }
+    }
+
+    &__title {
+        text-decoration: none;
+        font-size: 3rem;
+        color: $title;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            text-align: space-around;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $title;
+
+            &:hover {
+                color: $title-dark;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        list-style: none;
+        margin: 1rem;
+        padding: 0;
+
+        &-link {
+            text-decoration: none;
+            color: $title;
+        }
+
+        &-icon {
+            width: 24px;
+
+            @include tablet {
+                width: 48px;
+            }
+
+        }
+    }
+
+    &__copyright {
+        color: $title-dark;
+        font-size: 0.7rem;
+    }
+}

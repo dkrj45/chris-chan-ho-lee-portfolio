@@ -73,6 +73,7 @@
         padding: 1rem;
         border-radius: 1rem;
         width: 300px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
 
         @include tablet {
             margin: 0 1rem;
