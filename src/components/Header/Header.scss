@@ -3,6 +3,17 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials/colors" as *;
 
+@keyframes slide {
+    from {
+        position: absolute;
+        right: -18.75rem;
+    }
+
+    to {
+        right: 1rem;
+    }
+}
+
 .header{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
@@ -13,6 +24,7 @@
     padding: 0 2rem;
     margin: 0 auto;
     max-width: 1280px;
+    position: relative;
 
     &__logo {
         font-weight: 400;
@@ -74,5 +86,6 @@
         padding: 0;
         border-radius: 1rem;
         border: solid 1px rgba(0,0,0,0.1);
+        animation: slide 1s 
     }
 }

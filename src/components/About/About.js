@@ -28,6 +28,7 @@ function About() {
                             <li>Heroku</li>
                             <li>Git/Github</li>
                             <li>Jest</li>
+                            <li>Figma</li>
                             <li>Object Oriented Programming</li>
                             <li>Responsive Design</li>
                         </ul>
