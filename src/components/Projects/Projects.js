@@ -1,8 +1,7 @@
 import './Projects.scss';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
-import misely from '../../assets/videos/misely.mp4';
-// import miselyThumbnail from '../../assets/images/misely.png';
+import misely from '../../assets/images/misely.png';
 import instock from '../../assets/images/instock.png';
 import wnba from '../../assets/images/wnba.png';
 import brainflix from '../../assets/images/brainflix.png';
@@ -28,7 +27,7 @@ function Projects() {
                 >
                     <SplideSlide>
                         <div className='projects__card'>
-                            <video controls className='projects__card-top' src={misely} />
+                            <img className='projects__card-top' src={misely} alt='' />
                             <div className='projects__card-bottom'>
                                 <h3 className='projects__card-title'>Misely</h3>
                                 <p className='projects__card-text'>Misely is a mobile app that connects new mothers with interviewed, background-checked and top-rated professionals to make postpartum period enjoyable. The deployed website is a proof-of-concept prototype.</p>
