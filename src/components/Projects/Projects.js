@@ -1,6 +1,6 @@
 import './Projects.scss';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css/skyblue';
+// import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import '@splidejs/react-splide/css/skyblue';
 import misely from '../../assets/videos/misely.mp4';
 import miselyThumbnail from '../../assets/images/misely.png';
 import instock from '../../assets/images/instock.png';
@@ -15,7 +15,7 @@ function Projects() {
             <h2 className='projects__title'>Projects</h2>
             <p className='projects__subtitle'>Swipe through my projects!</p>
             <div className='projects__tablet-aligner'>
-                <Splide
+                {/* <Splide
                     options={{
                         type: 'loop',
                         focus: 'center',
@@ -26,7 +26,7 @@ function Projects() {
                     }}
                     aria-label="My Favorite Images"
                 >
-                    <SplideSlide>
+                    <SplideSlide> */}
                         <div className='projects__card'>
                             <video controls poster={miselyThumbnail} className='projects__card-top' src={misely} />
                             <div className='projects__card-bottom'>
@@ -45,8 +45,8 @@ function Projects() {
                                 </ul>
                             </div>
                         </div>
-                    </SplideSlide>
-                    <SplideSlide>
+                    {/* </SplideSlide>
+                    <SplideSlide> */}
                         <div className='projects__card'>
                             <img className='projects__card-top' src={instock} alt='' />
                             <div className='projects__card-bottom'>
@@ -65,8 +65,8 @@ function Projects() {
                                 </ul>
                             </div>
                         </div>
-                    </SplideSlide>
-                    <SplideSlide>
+                    {/* </SplideSlide>
+                    <SplideSlide> */}
                         <div className='projects__card'>
                             <img className='projects__card-top' src={wnba} alt='' />
                             <div className='projects__card-bottom'>
@@ -83,8 +83,8 @@ function Projects() {
                                 </ul>
                             </div>
                         </div>
-                    </SplideSlide>
-                    <SplideSlide>
+                    {/* </SplideSlide>
+                    <SplideSlide> */}
                         <div className='projects__card'>
                             <img className='projects__card-top' src={brainflix} alt='' />
                             <div className='projects__card-bottom'>
@@ -103,8 +103,8 @@ function Projects() {
                                 </ul>
                             </div>
                         </div>
-                    </SplideSlide>
-                    <SplideSlide>
+                    {/* </SplideSlide>
+                    <SplideSlide> */}
                         <div className='projects__card'>
                             <img className='projects__card-top' src={bandsite} alt='' />
                             <div className='projects__card-bottom'>
@@ -120,8 +120,8 @@ function Projects() {
                                 </ul>
                             </div>
                         </div>
-                    </SplideSlide>
-                </Splide>
+                    {/* </SplideSlide>
+                </Splide> */}
             </div>
         </div>
     );
