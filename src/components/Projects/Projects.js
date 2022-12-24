@@ -1,7 +1,7 @@
 import './Projects.scss';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
-import misely from '../../assets/images/misely.png';
+import misely from '../../assets/images/thumbnail.png';
 import instock from '../../assets/images/instock.png';
 import wnba from '../../assets/images/wnba.png';
 import brainflix from '../../assets/images/brainflix.png';
