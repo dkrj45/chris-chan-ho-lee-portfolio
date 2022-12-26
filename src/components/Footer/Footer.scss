@@ -5,9 +5,11 @@
 
 .footer {
     width: 100%;
-    padding: 2rem;
-    background-color: $container;
-    height: 15rem;
+    padding: 3rem 2rem;
+
+    @include tablet{
+        padding: 5rem 2rem;
+    }
 
     &__container {
         display: flex;
@@ -33,13 +35,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 300px;
         list-style: none;
         margin: 0;
         padding: 0;
 
         &-item {
-            text-align: space-around;
+            text-align: center;
+            width: 100%;
         }
 
         &-link {

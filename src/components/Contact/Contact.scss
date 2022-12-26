@@ -4,15 +4,16 @@
 @use "../../styles//partials//colors" as *;
 
 .contact {
-    margin: 3rem auto;
-    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
+    padding: 3rem 2rem;
+    background-color: rgb(238, 238, 238);
 
     @include tablet {
-        height: 700px;
+        padding: 5rem 2rem;
     }
 
     &__title {
@@ -27,6 +28,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            max-width: 1280px;
             height: 70%;
         }
     }
@@ -37,7 +39,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 2rem;
-        background-color: $container;
+        background-color: $body;
         border-radius: 2rem;
         border: 1px solid rgba(0, 0, 0, 0.15);
     }
@@ -49,11 +51,9 @@
     }
 
     &__link {
-        display: flex;
-        align-items: center;
         text-decoration: none;
-        color: $title;
-        background-color: orange;
+        color: $body;
+        background-color: #0072b1;
         padding: 0.5rem 1rem;
         border-radius: 2rem;
     }
@@ -107,7 +107,7 @@
             top: -0.75rem;
             left: 1.25rem;
             padding: 0.25rem;
-            background-color: $body;
+            background-color: rgb(238, 238, 238);
             z-index: 10;
             font-size: 0.75rem;
             color: $text;
@@ -145,8 +145,6 @@
             font-family: 'Poppins';
             font-size: 1rem;
             color: $body;
-            display: flex;
-            align-items: center;
 
             &:hover {
                 background-color: $title;

@@ -2,7 +2,6 @@ import './Contact.scss';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import email from '../../assets/icons/email.png';
-import arrow from '../../assets/icons/arrow.png';
 
 function Contact() {
 
@@ -23,7 +22,7 @@ function Contact() {
                 <div className='contact__email'>
                     <img src={email} alt='Email' />
                     <p className='contact__text'>dkrj45@gmail.com</p>
-                    <a className='contact__link' href='mailto:dkrj45@gmail.com'>Send Email<img src={arrow} alt='arrow' /></a>
+                    <a className='contact__link' href='mailto:dkrj45@gmail.com'>Send Email</a>
                 </div>
                 <div className='contact__or-container'>
                     <p className='contact__or'>or</p>
@@ -41,7 +40,7 @@ function Contact() {
                         <label className='contact__form-tag'>Message</label>
                         <textarea className='contact__form-input' name="message" placeholder="Please write your message here." color='30' rows='10'></textarea>
                     </div>
-                    <button className='contact__form-submit'>Send Message<img src={arrow} alt='arrow' /></button>
+                    <button className='contact__form-submit'>Send Message</button>
                 </form>
             </div>
         </div>

@@ -21,7 +21,6 @@ function Projects() {
                         gap: '1rem',
                         width: '100%',
                         perMove: 1,
-                        padding: '20%'
                     }}
                     aria-label="My Favorite Images"
                 >
@@ -88,7 +87,7 @@ function Projects() {
                             <img className='projects__card-top' src={brainflix} alt='' />
                             <div className='projects__card-bottom'>
                                 <h3 className='projects__card-title'>Brainflix</h3>
-                                <p className='projects__card-text'>Branflix is a full stack responsive website. It is a video streaming platform such as Youtube or Netflix. Users can browse videos, comment on them, and even upload their own videos.</p>
+                                <p className='projects__card-text'>Brainflix is a full stack responsive website. It is a video streaming platform such as Youtube and Netflix. Users can browse videos, comment on them, and even upload their own videos.</p>
                                 <a href='https://brainflix.chanholee.com' className='projects__card-button'>Visit Project</a>
                                 <ul className='projects__card-tech-stack'>
                                     <li>HTML</li>
