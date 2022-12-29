@@ -21,6 +21,11 @@ function Projects() {
                         gap: '1rem',
                         width: '100%',
                         perMove: 1,
+                        breakpoints: {
+                            767: {
+                              arrows: false
+                            },
+                          },
                     }}
                     aria-label="My Favorite Images"
                 >
