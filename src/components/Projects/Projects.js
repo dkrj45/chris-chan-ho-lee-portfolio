@@ -23,7 +23,8 @@ function Projects() {
                         perMove: 1,
                         breakpoints: {
                             767: {
-                              arrows: false
+                              arrows: false,
+                              width: '320px',
                             },
                           },
                     }}
