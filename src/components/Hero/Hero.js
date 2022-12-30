@@ -2,7 +2,7 @@ import './Hero.scss';
 import linkedin from '../../assets/icons/linkedin.png';
 import github from '../../assets/icons/github.png';
 import chris from '../../assets/images/chris.png';
-import handDown from '../../assets/icons/hand-down.png';
+import mouse from '../../assets/icons/mouse.png';
 
 function Hero() {
 
@@ -22,7 +22,7 @@ function Hero() {
                         <h3 className='hero__title'>Full Stack Developer</h3>
                         <p className='hero__description'>Hi! I am a full stack developer based in Toronto.<br></br>Welcome to my portfolio website!</p>
                         <div className='hero__extra'>
-                            <img className='hero__hand-down' src={handDown} alt='hand-down'/>
+                            <img className='hero__hand-down' src={mouse} alt='hand-down'/>
                             <p className='hero__learn-more'>Scroll down to learn more about me and my projects!</p>
                         </div>
                     </div>

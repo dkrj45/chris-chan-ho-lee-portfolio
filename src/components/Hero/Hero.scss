@@ -97,6 +97,10 @@
                 width: 300px;
                 animation: border-animation 8s ease-in-out infinite 1s;
             }
+
+            @include desktop {
+                width: 400px;
+            }
         }
     }
 

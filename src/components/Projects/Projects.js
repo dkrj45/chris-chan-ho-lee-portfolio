@@ -65,7 +65,6 @@ function Projects() {
                                     <li>Node</li>
                                     <li>Express</li>
                                     <li>Sass</li>
-                                    <li>Heroku</li>
                                 </ul>
                             </div>
                         </div>
@@ -75,7 +74,7 @@ function Projects() {
                             <img className='projects__card-top' src={wnba} alt='' />
                             <div className='projects__card-bottom'>
                                 <h3 className='projects__card-title'>WNBA Player Page</h3>
-                                <p className='projects__card-text'>This was a 24-hour industrial project hosted by Brainstation and WNBA (Women's National Basketball Association). As a solution to WNBA's problem statement, a team of web developers, data analysts, UI/UX designers, and a digital marketer devided to recreate a player page.</p>
+                                <p className='projects__card-text'>This was a 24-hour industrial project hosted by Brainstation and WNBA (Women's National Basketball Association). As a solution to WNBA's problem statement, a team of web developers, data analysts, UI/UX designers, and a digital marketer devided to recreate WNBA's player page.</p>
                                 <a href='https://wnba.chanholee.com' className='projects__card-button'>Visit Project</a>
                                 <ul className='projects__card-tech-stack'>
                                     <li>HTML</li>
@@ -84,6 +83,7 @@ function Projects() {
                                     <li>React</li>
                                     <li>Sass</li>
                                     <li>Figma</li>
+                                    <li>AWS</li>
                                 </ul>
                             </div>
                         </div>
