@@ -1,5 +1,5 @@
 import './About.scss';
-import resume from '../../assets/files/resume.pdf';
+import resume from '../../assets/files/chris-lee-resume.pdf';
 
 function About() {
 
