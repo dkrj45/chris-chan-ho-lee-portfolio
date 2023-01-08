@@ -1,5 +1,5 @@
 import './About.scss';
-import resume from '../../assets/files/chris-lee-resume.pdf';
+import resume from '../../assets/files/resume-chris-lee.pdf';
 
 function About() {
 
@@ -38,7 +38,7 @@ function About() {
                         <p className='about__text'>With previous background in mechanical engineering and investigative services comes a proven record of thinking like a machine and problem solving.</p>
                         <p className='about__text'>Check out the 'Projects' section below to see my latest deployed websites!</p>
                         <div className='about__resume-container'>
-                            <a href={resume} download='chris-lee-resume' className='about__resume'>Download Resume</a>
+                            <a href={resume} download='chris-lee-resume.pdf' className='about__resume'>Download Resume</a>
                         </div>
                     </div>
                 </div>
