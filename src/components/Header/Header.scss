@@ -32,6 +32,10 @@
   width: 100%;
   background-color: $body;
   z-index: 3;
+
+  @include tablet {
+    position: absolute;
+  }
 }
 .nav {
   display: flex;
@@ -68,10 +72,13 @@
     width: 100%;
     padding: 1rem;
     text-decoration: none;
-    border-bottom: 1px solid lightgray;
 
     &:hover {
       background-color: $container;
+    }
+
+    &__option-container--mobile {
+      border-bottom: 1px solid lightgray;
     }
   }
 
