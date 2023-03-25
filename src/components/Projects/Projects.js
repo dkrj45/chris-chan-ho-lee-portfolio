@@ -16,6 +16,7 @@ function Projects() {
         <AnimationOnScroll
           animateIn="animate__fadeInRightBig"
           animateOut="animate__fadeOutLeftBig"
+          duration={0.5}
         >
           <div className="projects__card">
             <img className="projects__card-top" src={clchat} alt="" />
@@ -24,9 +25,8 @@ function Projects() {
               <p className="projects__card-text">
                 CL Chat is a fully responsive real-time chat app. Once
                 registered and logged in, users can add friends, check their
-                online status and start chatting.
-                {/* Check out the demo video and visit the project
-              site! */}
+                online status and start chatting. Check out the demo video and
+                visit the project si te!
               </p>
               <a
                 href="https://clchat.chanholee.com"
@@ -54,6 +54,7 @@ function Projects() {
         <AnimationOnScroll
           animateIn="animate__fadeInLeftBig"
           animateOut="animate__fadeOutRightBig"
+          duration={0.5}
         >
           <div className="projects__card">
             <img className="projects__card-top" src={misely} alt="" />
@@ -87,6 +88,7 @@ function Projects() {
         <AnimationOnScroll
           animateIn="animate__fadeInRightBig"
           animateOut="animate__fadeOutLeftBig"
+          duration={0.5}
         >
           <div className="projects__card">
             <img className="projects__card-top" src={instock} alt="" />
@@ -119,6 +121,7 @@ function Projects() {
         <AnimationOnScroll
           animateIn="animate__fadeInLeftBig"
           animateOut="animate__fadeOutRightBig"
+          duration={0.5}
         >
           <div className="projects__card">
             <img className="projects__card-top" src={brainflix} alt="" />
@@ -151,6 +154,7 @@ function Projects() {
         <AnimationOnScroll
           animateIn="animate__fadeInRightBig"
           animateOut="animate__fadeOutLeftBig"
+          duration={0.5}
         >
           <div className="projects__card">
             <img className="projects__card-top" src={bandsite} alt="" />

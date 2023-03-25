@@ -1,130 +1,134 @@
-@use '../../styles/partials/fonts' as *;
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles//partials//colors" as *;
 
 .about {
-    margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: rgb(238, 238, 238);
+
+  @include tablet {
+    padding: 5rem 2rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    color: $title;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $text;
+    text-align: center;
+  }
+
+  &__tablet-aligner {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1280px;
+    }
+  }
+
+  &__tablet-divider {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 2rem;
-    background-color: rgb(238, 238, 238);
+    justify-content: center;
 
     @include tablet {
-        padding: 5rem 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 3rem;
     }
+  }
 
-    &__title {
-        font-size: 2.5rem;
-        color: $title;
+  &__chris {
+    width: 300px;
+    border-radius: 2rem;
+    margin: 4rem 1rem 2rem;
+
+    @include tablet {
+      width: 400px;
+      margin: 1rem;
     }
+  }
 
-    &__subtitle {
-        font-size: 1rem;
-        color: $text;
-        text-align: center;
+  &__skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $container;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+    @include tablet {
+      margin: 0 1rem;
+      width: 400px;
     }
+  }
 
-    &__tablet-aligner {
-        @include tablet {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 1280px;
-        }
+  &__skills-title {
+    font-size: 2rem;
+    color: $title;
+  }
+
+  //   &__skills-subtitle {
+  //     align-self: flex-start;
+  //   }
+
+  &__skills-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0;
+      background-color: $body;
+      border-radius: 1rem;
+      color: $title;
     }
+  }
 
-    &__tablet-divider {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  &__text {
+    max-width: 475px;
+    margin-bottom: 1rem;
+  }
 
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-evenly;
-            width: 100%;
-            margin-top: 3rem;
-        }
+  &__resume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  &__resume {
+    padding: 1rem;
+    background-color: #0072b1;
+    text-decoration: none;
+    color: $body;
+    border-radius: 2rem;
+
+    &:hover {
+      background-color: $title;
     }
-
-    &__chris {
-        width: 300px;
-        border-radius: 2rem;
-        margin: 4rem 1rem 2rem;
-
-        @include tablet {
-            width: 400px;
-            margin: 1rem;
-        }
-    }
-
-    &__skills-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $container;
-        margin: 2rem 0;
-        padding: 1rem;
-        border-radius: 1rem;
-        width: 300px;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-
-        @include tablet {
-            margin: 0 1rem;
-            width: 400px;
-        }
-    }
-
-    &__skills-title {
-        font-size: 2rem;
-        color: $title;
-    }
-
-    &__skills-list {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-
-        li {
-            padding: 0.5rem 0.75rem;
-            margin: 0.25rem 0;
-            background-color: $body;
-            border-radius: 1rem;
-            color: $title;
-        }
-    }
-
-    &__text {
-        max-width: 475px;
-        margin-bottom: 1rem;
-    }
-
-    &__resume-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 2rem;
-    }
-
-    &__resume {
-        padding: 1rem;
-        background-color: #0072b1;
-        text-decoration: none;
-        color: $body;
-        border-radius: 2rem;
-
-        &:hover {
-            background-color: $title;
-        }
-    }
+  }
 }

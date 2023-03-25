@@ -1,5 +1,5 @@
 import "./About.scss";
-import resume from "../../assets/files/resume-chris-lee.pdf";
+import resume from "../../assets/files/Chris Lee - Resume.pdf";
 
 function About() {
   return (
@@ -12,26 +12,32 @@ function About() {
         <div className="about__tablet-divider">
           <div className="about__skills-container">
             <h3 className="about__skills-title">Skills</h3>
+            {/* <h4 className="about__skills-subtitle">Languages</h4> */}
             <ul className="about__skills-list">
               <li>HTML</li>
               <li>CSS</li>
+              <li>Sass</li>
               <li>Javascript</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+              {/* </ul>
+            <h4 className="about__skills-subtitle">Libraries</h4>
+            <ul className="about__skills-list"> */}
               <li>React</li>
               <li>Node</li>
               <li>Express</li>
+              <li>Socket.IO</li>
+              <li>Knex.js</li>
+              {/* </ul>
+            <h4 className="about__skills-subtitle">Tools</h4>
+            <ul className="about__skills-list"> */}
+              <li>Git</li>
+              <li>Redis</li>
               <li>PostgreSQL</li>
-              <li>Sass</li>
-              <li>DOM APIs</li>
-              <li>Web APIs</li>
-              <li>User Authentication</li>
-              <li>OAuth</li>
+              <li>Docker</li>
               <li>AWS</li>
-              <li>Heroku</li>
-              <li>Git/Github/Gitlab</li>
-              <li>Socket.io</li>
-              <li>Figma</li>
-              <li>Object Oriented Programming</li>
-              <li>Responsive Design</li>
+              <li>Postman</li>
+              <li>Auth0</li>
             </ul>
           </div>
           <div>
