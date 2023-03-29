@@ -6,6 +6,18 @@ import bandsite from "../../assets/images/bandsite.png";
 import clchat from "../../assets/images/clchat.png";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import html from "../../assets/logos/html.png";
+import css from "../../assets/logos/css.png";
+import javascript from "../../assets/logos/javascript.png";
+import react from "../../assets/logos/react.png";
+import node from "../../assets/logos/node.png";
+import express from "../../assets/logos/express.png";
+import sass from "../../assets/logos/sass.png";
+import socket from "../../assets/logos/socket.png";
+import postgresql from "../../assets/logos/postgresql.png";
+import redis from "../../assets/logos/redis.png";
+import aws from "../../assets/logos/aws.png";
+import docker from "../../assets/logos/docker.png";
 
 function Projects() {
   return (
@@ -26,28 +38,37 @@ function Projects() {
                 CL Chat is a fully responsive real-time chat app. Once
                 registered and logged in, users can add friends, check their
                 online status and start chatting. Check out the demo video and
-                visit the project si te!
+                visit the project site!
               </p>
-              <a
-                href="https://clchat.chanholee.com"
-                className="projects__card-button"
-              >
-                Visit Project
-              </a>
-              <ul className="projects__card-tech-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Sass</li>
-                <li>Socket.io</li>
-                <li>PostgreSQL</li>
-                <li>Redis</li>
-                <li>AWS (EC2)</li>
-                <li>Docker</li>
-              </ul>
+              <div className="projects__card-button-container">
+                <a
+                  href="https://clchat.chanholee.com"
+                  className="projects__card-button--first"
+                >
+                  Visit Project
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=fgyDKTkePIw&t=4s"
+                  className="projects__card-button--second"
+                >
+                  Watch Demo
+                </a>
+              </div>
+
+              <div className="projects__card-tech-stack">
+                <img src={html} alt="html" />
+                <img src={css} alt="css" />
+                <img src={javascript} alt="javascript" />
+                <img src={react} alt="react" />
+                <img src={node} alt="node" />
+                <img src={express} alt="express" />
+                <img src={sass} alt="sass" />
+                <img src={socket} alt="socket.IO" />
+                <img src={postgresql} alt="postgreSQL" />
+                <img src={redis} alt="redis" />
+                <img src={aws} alt="aws" />
+                <img src={docker} alt="docker" />
+              </div>
             </div>
           </div>
         </AnimationOnScroll>
@@ -66,22 +87,30 @@ function Projects() {
                 make postpartum period enjoyable. The deployed website is a
                 proof-of-concept prototype.
               </p>
-              <a
-                href="https://misely.chanholee.com"
-                className="projects__card-button"
-              >
-                Visit Project
-              </a>
-              <ul className="projects__card-tech-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Sass</li>
-                <li>AWS</li>
-              </ul>
+              <div className="projects__card-button-container">
+                <a
+                  href="https://misely.chanholee.com"
+                  className="projects__card-button--first"
+                >
+                  Visit Project
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=JXgPsyD4D24"
+                  className="projects__card-button--second"
+                >
+                  Watch Demo
+                </a>
+              </div>
+              <div className="projects__card-tech-stack">
+                <img src={html} alt="html" />
+                <img src={css} alt="css" />
+                <img src={javascript} alt="javascript" />
+                <img src={react} alt="react" />
+                <img src={node} alt="node" />
+                <img src={express} alt="express" />
+                <img src={sass} alt="sass" />
+                <img src={aws} alt="aws" />
+              </div>
             </div>
           </div>
         </AnimationOnScroll>
@@ -106,15 +135,15 @@ function Projects() {
               >
                 Visit Project
               </a>
-              <ul className="projects__card-tech-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Sass</li>
-              </ul>
+              <div className="projects__card-tech-stack">
+                <img src={html} alt="html" />
+                <img src={css} alt="css" />
+                <img src={javascript} alt="javascript" />
+                <img src={react} alt="react" />
+                <img src={node} alt="node" />
+                <img src={express} alt="express" />
+                <img src={sass} alt="sass" />
+              </div>
             </div>
           </div>
         </AnimationOnScroll>
@@ -138,16 +167,16 @@ function Projects() {
               >
                 Visit Project
               </a>
-              <ul className="projects__card-tech-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>Sass</li>
-                <li>AWS</li>
-              </ul>
+              <div className="projects__card-tech-stack">
+                <img src={html} alt="html" />
+                <img src={css} alt="css" />
+                <img src={javascript} alt="javascript" />
+                <img src={react} alt="react" />
+                <img src={node} alt="node" />
+                <img src={express} alt="express" />
+                <img src={sass} alt="sass" />
+                <img src={aws} alt="aws" />
+              </div>
             </div>
           </div>
         </AnimationOnScroll>
@@ -172,13 +201,13 @@ function Projects() {
               >
                 Visit Project
               </a>
-              <ul className="projects__card-tech-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Sass</li>
-                <li>AWS</li>
-              </ul>
+              <div className="projects__card-tech-stack">
+                <img src={html} alt="html" />
+                <img src={css} alt="css" />
+                <img src={javascript} alt="javascript" />
+                <img src={sass} alt="sass" />
+                <img src={aws} alt="aws" />
+              </div>
             </div>
           </div>
         </AnimationOnScroll>

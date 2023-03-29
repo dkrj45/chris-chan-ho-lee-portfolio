@@ -48,9 +48,17 @@
       width: 700px;
       margin: 0 auto 3rem;
       flex-direction: row;
-      height: 540px;
+      height: 475px;
       padding: 1rem;
       position: relative;
+    }
+
+    @include desktop {
+      background-color: $body;
+      border: none;
+      width: 1080px;
+      justify-content: space-between;
+      margin: 0;
     }
 
     &-top {
@@ -63,6 +71,11 @@
         border-radius: 2rem;
         width: 50%;
         aspect-ratio: 4/3;
+        margin-top: 2rem;
+      }
+
+      @include desktop {
+        margin: 0;
       }
     }
 
@@ -75,8 +88,12 @@
       padding: 1rem;
 
       @include tablet {
-        width: 50%;
-        // margin: 150px 0 150px;
+        width: 45%;
+        margin-top: 2rem;
+      }
+
+      @include desktop {
+        margin: 0;
       }
     }
 
@@ -93,12 +110,21 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
+      @include desktop {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
     }
 
     &-text {
       width: 100%;
       font-size: 1rem;
-      color: $text;
+      color: $title;
+      margin: 1rem 0;
     }
 
     &-button {
@@ -106,7 +132,7 @@
       color: $container;
       background-color: #0072b1;
       padding: 0.5rem 1rem;
-      margin: 1rem;
+      margin: 0.5rem;
       border-radius: 2rem;
 
       @include tablet {
@@ -117,33 +143,79 @@
         margin: 0;
       }
 
+      @include desktop {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 1rem;
+      }
+
       &:hover {
         background-color: $title;
+      }
+
+      &--first {
+        @extend .projects__card-button;
+        @include tablet {
+          transform: translateX(-110%);
+        }
+        @include desktop {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+      }
+
+      &--second {
+        @extend .projects__card-button;
+        @include tablet {
+          transform: translateX(10%);
+        }
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+          visibility: none;
+        }
+
+        @include desktop {
+          flex-direction: row;
+          width: 300px;
+          justify-content: space-around;
+        }
       }
     }
 
     &-tech-stack {
-      margin: 1rem 0 0;
+      margin: 2rem 0 0;
       padding: 0;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      list-style: none;
 
       @include tablet {
         position: absolute;
-        bottom: 1rem;
+        bottom: 1.5rem;
         left: 50%;
         transform: translateX(-50%);
         justify-content: center;
       }
 
-      li {
-        padding: 0.5rem 0.75rem;
-        background-color: $body;
-        border-radius: 1rem;
-        margin: 0 0.5rem 0.5rem;
+      @include desktop {
+        position: relative;
+      }
+
+      img {
+        width: 36px;
+        margin: 0.5rem;
       }
     }
   }
